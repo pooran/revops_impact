@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MEDDICC_Solution_to_Negotiation_Gate</fullName>
+    <active>true</active>
+    <description>Prevents an opportunity from advancing to Negotiation unless the MEDDICC Composite Score is 65 or above. All seven score fields must also be populated.</description>
+    <errorConditionFormula>
+        AND(
+            ISPICKVAL(StageName, "Negotiation/Review"),
+            OR(
+                ISNULL(MEDDICC_Composite_Score__c),
+                MEDDICC_Composite_Score__c &lt; 65,
+                ISPICKVAL(MEDDICC_Metrics_Score__c, ""),
+                ISPICKVAL(MEDDICC_Economic_Buyer_Score__c, ""),
+                ISPICKVAL(MEDDICC_Decision_Criteria_Score__c, ""),
+                ISPICKVAL(MEDDICC_Decision_Process_Score__c, ""),
+                ISPICKVAL(MEDDICC_Identified_Pain_Score__c, ""),
+                ISPICKVAL(MEDDICC_Champion_Score__c, ""),
+                ISPICKVAL(MEDDICC_Competition_Score__c, "")
+            )
+        )
+    </errorConditionFormula>
+    <errorMessage>To advance to Negotiation, all seven MEDDICC elements must be scored and the Composite Score must be 65 or above. Review deal qualification with your manager before advancing.</errorMessage>
+</ValidationRule>

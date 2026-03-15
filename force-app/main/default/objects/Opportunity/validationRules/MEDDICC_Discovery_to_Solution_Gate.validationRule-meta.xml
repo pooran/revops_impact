@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MEDDICC_Discovery_to_Solution_Gate</fullName>
+    <active>true</active>
+    <description>Prevents an opportunity from advancing past Discovery until Metrics and Identified Pain score fields are populated. Threshold: both fields must have a value.</description>
+    <errorConditionFormula>
+        AND(
+            ISPICKVAL(StageName, "Solution Alignment"),
+            OR(
+                ISNULL(MEDDICC_Metrics_Score__c),
+                ISPICKVAL(MEDDICC_Metrics_Score__c, ""),
+                ISNULL(MEDDICC_Identified_Pain_Score__c),
+                ISPICKVAL(MEDDICC_Identified_Pain_Score__c, "")
+            )
+        )
+    </errorConditionFormula>
+    <errorMessage>To advance to Solution Alignment, Metrics and Identified Pain scores must be entered. These fields help ensure we have confirmed the business case before proposing a solution.</errorMessage>
+</ValidationRule>

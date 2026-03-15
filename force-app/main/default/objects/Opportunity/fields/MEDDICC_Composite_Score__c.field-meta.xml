@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MEDDICC_Composite_Score__c</fullName>
+    <label>MEDDICC Composite Score</label>
+    <type>Number</type>
+    <precision>5</precision>
+    <scale>1</scale>
+    <description>Weighted composite score out of 100. Weights: Champion 20%, Economic Buyer 20%, Metrics 15%, Identified Pain 15%, Decision Criteria 12%, Decision Process 12%, Competition 6%. Calculated by the MEDDICCScoringHandler Apex class on save.</description>
+    <externalId>false</externalId>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <unique>false</unique>
+</CustomField>
