@@ -1,0 +1,175 @@
+{
+    "propertyGroupName": "meddicc_scoring",
+    "propertyGroupLabel": "MEDDICC Scoring",
+    "properties": [
+          {
+                  "name": "meddicc_metrics_score",
+                  "label": "MEDDICC Metrics Score",
+                  "type": "enumeration",
+                  "fieldType": "select",
+                  "groupName": "meddicc_scoring",
+                  "description": "Manager or rep confidence rating for Metrics. 1 = Not identified, 5 = Fully confirmed.",
+                  "options": [
+                            { "label": "1 - Not identified", "value": "1", "displayOrder": 1 },
+                            { "label": "2 - Partially understood", "value": "2", "displayOrder": 2 },
+                            { "label": "3 - Understood", "value": "3", "displayOrder": 3 },
+                            { "label": "4 - Confirmed", "value": "4", "displayOrder": 4 },
+                            { "label": "5 - Fully confirmed and documented", "value": "5", "displayOrder": 5 }
+                  ]
+          },
+          {
+                  "name": "meddicc_economic_buyer_score",
+                  "label": "MEDDICC Economic Buyer Score",
+                  "type": "enumeration",
+                  "fieldType": "select",
+                  "groupName": "meddicc_scoring",
+                  "description": "Manager or rep confidence rating for Economic Buyer. 1 = Not identified, 5 = Fully confirmed.",
+                  "options": [
+                            { "label": "1 - Not identified", "value": "1", "displayOrder": 1 },
+                            { "label": "2 - Partially understood", "value": "2", "displayOrder": 2 },
+                            { "label": "3 - Understood", "value": "3", "displayOrder": 3 },
+                            { "label": "4 - Confirmed", "value": "4", "displayOrder": 4 },
+                            { "label": "5 - Fully confirmed and documented", "value": "5", "displayOrder": 5 }
+                  ]
+          },
+          {
+                  "name": "meddicc_decision_criteria_score",
+                  "label": "MEDDICC Decision Criteria Score",
+                  "type": "enumeration",
+                  "fieldType": "select",
+                  "groupName": "meddicc_scoring",
+                  "description": "Manager or rep confidence rating for Decision Criteria. 1 = Not identified, 5 = Fully confirmed.",
+                  "options": [
+                            { "label": "1 - Not identified", "value": "1", "displayOrder": 1 },
+                            { "label": "2 - Partially understood", "value": "2", "displayOrder": 2 },
+                            { "label": "3 - Understood", "value": "3", "displayOrder": 3 },
+                            { "label": "4 - Confirmed", "value": "4", "displayOrder": 4 },
+                            { "label": "5 - Fully confirmed and documented", "value": "5", "displayOrder": 5 }
+                  ]
+          },
+          {
+                  "name": "meddicc_decision_process_score",
+                  "label": "MEDDICC Decision Process Score",
+                  "type": "enumeration",
+                  "fieldType": "select",
+                  "groupName": "meddicc_scoring",
+                  "description": "Manager or rep confidence rating for Decision Process. 1 = Not identified, 5 = Fully confirmed.",
+                  "options": [
+                            { "label": "1 - Not identified", "value": "1", "displayOrder": 1 },
+                            { "label": "2 - Partially understood", "value": "2", "displayOrder": 2 },
+                            { "label": "3 - Understood", "value": "3", "displayOrder": 3 },
+                            { "label": "4 - Confirmed", "value": "4", "displayOrder": 4 },
+                            { "label": "5 - Fully confirmed and documented", "value": "5", "displayOrder": 5 }
+                  ]
+          },
+          {
+                  "name": "meddicc_identified_pain_score",
+                  "label": "MEDDICC Identified Pain Score",
+                  "type": "enumeration",
+                  "fieldType": "select",
+                  "groupName": "meddicc_scoring",
+                  "description": "Manager or rep confidence rating for Identified Pain. 1 = Not identified, 5 = Fully confirmed.",
+                  "options": [
+                            { "label": "1 - Not identified", "value": "1", "displayOrder": 1 },
+                            { "label": "2 - Partially understood", "value": "2", "displayOrder": 2 },
+                            { "label": "3 - Understood", "value": "3", "displayOrder": 3 },
+                            { "label": "4 - Confirmed", "value": "4", "displayOrder": 4 },
+                            { "label": "5 - Fully confirmed and documented", "value": "5", "displayOrder": 5 }
+                  ]
+          },
+          {
+                  "name": "meddicc_champion_score",
+                  "label": "MEDDICC Champion Score",
+                  "type": "enumeration",
+                  "fieldType": "select",
+                  "groupName": "meddicc_scoring",
+                  "description": "Manager or rep confidence rating for Champion. 1 = Not identified, 5 = Fully confirmed.",
+                  "options": [
+                            { "label": "1 - Not identified", "value": "1", "displayOrder": 1 },
+                            { "label": "2 - Partially understood", "value": "2", "displayOrder": 2 },
+                            { "label": "3 - Understood", "value": "3", "displayOrder": 3 },
+                            { "label": "4 - Confirmed", "value": "4", "displayOrder": 4 },
+                            { "label": "5 - Fully confirmed and documented", "value": "5", "displayOrder": 5 }
+                  ]
+          },
+          {
+                  "name": "meddicc_competition_score",
+                  "label": "MEDDICC Competition Score",
+                  "type": "enumeration",
+                  "fieldType": "select",
+                  "groupName": "meddicc_scoring",
+                  "description": "Manager or rep confidence rating for Competition. 1 = Not identified, 5 = Fully confirmed.",
+                  "options": [
+                            { "label": "1 - Not identified", "value": "1", "displayOrder": 1 },
+                            { "label": "2 - Partially understood", "value": "2", "displayOrder": 2 },
+                            { "label": "3 - Understood", "value": "3", "displayOrder": 3 },
+                            { "label": "4 - Confirmed", "value": "4", "displayOrder": 4 },
+                            { "label": "5 - Fully confirmed and documented", "value": "5", "displayOrder": 5 }
+                  ]
+          },
+          {
+                  "name": "meddicc_metrics_notes",
+                  "label": "MEDDICC Metrics Notes",
+                  "type": "string",
+                  "fieldType": "textarea",
+                  "groupName": "meddicc_scoring",
+                  "description": "Free-text notes on Metrics qualification element."
+          },
+          {
+                  "name": "meddicc_economic_buyer_notes",
+                  "label": "MEDDICC Economic Buyer Notes",
+                  "type": "string",
+                  "fieldType": "textarea",
+                  "groupName": "meddicc_scoring",
+                  "description": "Free-text notes on Economic Buyer qualification element."
+          },
+          {
+                  "name": "meddicc_decision_criteria_notes",
+                  "label": "MEDDICC Decision Criteria Notes",
+                  "type": "string",
+                  "fieldType": "textarea",
+                  "groupName": "meddicc_scoring",
+                  "description": "Free-text notes on Decision Criteria qualification element."
+          },
+          {
+                  "name": "meddicc_decision_process_notes",
+                  "label": "MEDDICC Decision Process Notes",
+                  "type": "string",
+                  "fieldType": "textarea",
+                  "groupName": "meddicc_scoring",
+                  "description": "Free-text notes on Decision Process qualification element."
+          },
+          {
+                  "name": "meddicc_identified_pain_notes",
+                  "label": "MEDDICC Identified Pain Notes",
+                  "type": "string",
+                  "fieldType": "textarea",
+                  "groupName": "meddicc_scoring",
+                  "description": "Free-text notes on Identified Pain qualification element."
+          },
+          {
+                  "name": "meddicc_champion_notes",
+                  "label": "MEDDICC Champion Notes",
+                  "type": "string",
+                  "fieldType": "textarea",
+                  "groupName": "meddicc_scoring",
+                  "description": "Free-text notes on Champion qualification element."
+          },
+          {
+                  "name": "meddicc_competition_notes",
+                  "label": "MEDDICC Competition Notes",
+                  "type": "string",
+                  "fieldType": "textarea",
+                  "groupName": "meddicc_scoring",
+                  "description": "Free-text notes on Competition qualification element."
+          },
+          {
+                  "name": "meddicc_composite_score",
+                  "label": "MEDDICC Composite Score",
+                  "type": "number",
+                  "fieldType": "number",
+                  "groupName": "meddicc_scoring",
+                  "description": "Weighted composite score (0-100) calculated from all 7 MEDDICC element scores. Updated automatically by the MEDDICC scoring workflow."
+          }
+    ]
+}
