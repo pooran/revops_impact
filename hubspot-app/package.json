@@ -1,0 +1,22 @@
+{
+    "name": "meddicc-hubspot-scoring",
+    "version": "1.0.0",
+    "description": "MEDDICC deal qualification scoring for HubSpot — custom coded workflow actions",
+    "main": "src/scoring/workflowAction.js",
+    "scripts": {
+          "test": "jest --verbose",
+          "test:watch": "jest --watch",
+          "provision": "node scripts/provision-properties.js"
+    },
+    "dependencies": {
+          "@hubspot/api-client": "^11.0.0"
+    },
+    "devDependencies": {
+          "jest": "^29.7.0"
+    },
+    "jest": {
+          "testEnvironment": "node",
+          "testMatch": ["**/__tests__/**/*.test.js"]
+    },
+    "license": "MIT"
+}
